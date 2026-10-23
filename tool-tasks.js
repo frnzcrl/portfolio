@@ -1,0 +1,1 @@
+(()=>{const filters=document.querySelectorAll('.tool-filter');filters.forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('.tool-task-panel').forEach(panel=>{panel.hidden=panel.dataset.taskCategory!==button.dataset.category;});}));})();

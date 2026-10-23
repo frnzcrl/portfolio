@@ -1,0 +1,1390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <meta content="Websites and workflows for small teams: responsive web design, workflow automation, and AI-assisted processes. Backed by a software engineering background." name="description" />
+    <title>Frenz Carl Asibuque — AI &amp; Automation Specialist | Web Designer</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+      :root {
+        --bg: #141714;
+        --panel: #1c201b;
+        --ink: #eeefe7;
+        --muted: #a7afa2;
+        --lime: #d4f77d;
+        --line: #343b30
+      }
+
+      * {
+        box-sizing: border-box
+      }
+
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 90px
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font: 16px 'DM Sans', sans-serif
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none
+      }
+
+      button {
+        font: inherit
+      }
+
+      ::selection {
+        background: var(--lime);
+        color: var(--bg)
+      }
+
+      .wrap {
+        max-width: 1280px;
+        margin: auto;
+        padding: 0 5%
+      }
+
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 96px;
+        border-bottom: 1px solid var(--line)
+      }
+
+      .brand {
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 23px;
+        font-weight: 700
+      }
+
+      .brand span {
+        color: var(--lime)
+      }
+
+      .links {
+        display: flex;
+        gap: 32px;
+        font-size: 14px
+      }
+
+      .links a:hover {
+        color: var(--lime)
+      }
+
+      .nav-tag {
+        font-size: 12px;
+        color: var(--muted)
+      }
+
+      .dot {
+        display: inline-block;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: var(--lime);
+        margin-right: 8px
+      }
+
+      .hero {
+        padding: 92px 0 70px;
+        display: grid;
+        grid-template-columns: 1.35fr 1fr;
+        gap: 60px;
+        align-items: center
+      }
+
+      .eyebrow {
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: var(--lime);
+        margin-bottom: 28px
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin: 0
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-family: 'Space Grotesk', sans-serif
+      }
+
+      h1 {
+        font-size: clamp(48px, 5.9vw, 84px);
+        line-height: 1.06;
+        font-weight: 500;
+        letter-spacing: -4px
+      }
+
+      h1 em {
+        font-style: normal;
+        color: var(--lime)
+      }
+
+      .intro {
+        max-width: 510px;
+        color: var(--muted);
+        line-height: 1.8;
+        margin: 30px 0
+      }
+
+      .actions {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 28px;
+        padding: 16px 23px;
+        border: 1px solid var(--line);
+        font-size: 14px;
+        border-radius: 4px
+      }
+
+      .btn.primary {
+        background: var(--lime);
+        border-color: var(--lime);
+        color: var(--bg)
+      }
+
+      .btn:hover {
+        transform: translateY(-2px)
+      }
+
+      .visual {
+        position: relative;
+        min-height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: radial-gradient(ellipse at center, #3c472633, transparent 70%)
+      }
+
+      .orbit {
+        width: 340px;
+        height: 340px;
+        border: 1px solid #566044;
+        border-radius: 50%;
+        position: relative;
+        display: grid;
+        place-items: center
+      }
+
+      .orbit:before {
+        content: '';
+        position: absolute;
+        inset: 30px;
+        border: 1px dashed #424c35;
+        border-radius: 50%
+      }
+
+      .monogram {
+        font: 500 85px 'Space Grotesk', sans-serif;
+        letter-spacing: -8px;
+        color: var(--lime);
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+        background: linear-gradient(145deg, #303b24, #1a2017);
+        border: 1px solid #677a45;
+        display: grid;
+        place-items: center;
+        box-shadow: 0 0 80px #a4d95112
+      }
+
+      .chip {
+        position: absolute;
+        background: #22291e;
+        border: 1px solid #4a553e;
+        padding: 12px 16px;
+        border-radius: 5px;
+        font: 12px 'Space Grotesk', monospace;
+        box-shadow: 0 12px 30px #0004
+      }
+
+      .c1 {
+        left: -8px;
+        top: 35px
+      }
+
+      .c2 {
+        right: -15px;
+        top: 150px
+      }
+
+      .c3 {
+        left: 3px;
+        bottom: 20px
+      }
+
+      .visual-note {
+        position: absolute;
+        bottom: -8px;
+        font: 11px monospace;
+        color: var(--muted);
+        letter-spacing: 2px
+      }
+
+      .strip {
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+        padding: 27px 0;
+        border-top: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+        font-size: 13px;
+        color: var(--muted)
+      }
+
+      .strip strong {
+        color: var(--ink);
+        font-weight: 500
+      }
+
+      .section {
+        padding: 90px 0
+      }
+
+      .section-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        margin-bottom: 38px;
+        gap: 30px
+      }
+
+      .kicker {
+        color: var(--muted);
+        font: 12px monospace;
+        letter-spacing: 1px;
+        margin-bottom: 15px
+      }
+
+      h2 {
+        font-size: 44px;
+        font-weight: 500;
+        letter-spacing: -1.8px
+      }
+
+      .section-head p {
+        max-width: 340px;
+        font-size: 14px;
+        line-height: 1.7;
+        color: var(--muted)
+      }
+
+      .projects {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 22px
+      }
+
+      .project {
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        overflow: hidden;
+        background: var(--panel)
+      }
+
+      .project-art {
+        height: 230px;
+        background: #252c20;
+        display: grid;
+        place-items: center;
+        position: relative;
+        overflow: hidden
+      }
+
+      .project-art.blue {
+        background: #202b2a
+      }
+
+      .flow {
+        display: flex;
+        align-items: center;
+        gap: 12px
+      }
+
+      .node {
+        border: 1px solid #7e8e67;
+        padding: 20px 15px;
+        background: #303d25;
+        border-radius: 6px;
+        font: 13px monospace;
+        color: #dfefc7
+      }
+
+      .flow b {
+        color: var(--lime);
+        font-size: 24px
+      }
+
+      .blue .node {
+        background: #293b3a;
+        border-color: #597d77;
+        color: #c9e2df
+      }
+
+      .art-label {
+        position: absolute;
+        left: 24px;
+        top: 20px;
+        font: 10px monospace;
+        color: #b3c29e;
+        letter-spacing: 2px
+      }
+
+      .project-body {
+        padding: 27px
+      }
+
+      .project-body h3 {
+        font-size: 24px;
+        font-weight: 500;
+        margin: 10px 0 14px
+      }
+
+      .project-body p {
+        font-size: 14px;
+        line-height: 1.8;
+        color: var(--muted)
+      }
+
+      .tags {
+        display: flex;
+        gap: 7px;
+        flex-wrap: wrap;
+        margin-top: 23px
+      }
+
+      .tags span {
+        font: 11px monospace;
+        border: 1px solid #424b3a;
+        padding: 6px 9px;
+        border-radius: 3px;
+        color: #c2cbb9
+      }
+
+      .project button {
+        border: 0;
+        border-top: 1px solid var(--line);
+        color: var(--ink);
+        width: 100%;
+        background: transparent;
+        padding: 18px 27px;
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer
+      }
+
+      .project button:hover {
+        background: #2b3424
+      }
+
+      .detail {
+        padding: 0 27px 24px;
+        color: var(--muted);
+        font-size: 14px;
+        line-height: 1.8
+      }
+
+      .detail[hidden] {
+        display: none
+      }
+
+      .about {
+        display: grid;
+        grid-template-columns: 1fr 1.1fr;
+        gap: 90px;
+        border-top: 1px solid var(--line)
+      }
+
+      .about p {
+        color: var(--muted);
+        line-height: 1.9;
+        margin: 23px 0
+      }
+
+      .skills {
+        margin-top: 15px
+      }
+
+      .skill-row {
+        display: grid;
+        grid-template-columns: 120px 1fr;
+        padding: 22px 0;
+        border-bottom: 1px solid var(--line);
+        gap: 20px;
+        font-size: 14px
+      }
+
+      .skill-row span {
+        color: var(--muted);
+        line-height: 1.8
+      }
+
+      .experience {
+        border-top: 1px solid var(--line)
+      }
+
+      .job {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1.3fr;
+        gap: 30px;
+        border-top: 1px solid var(--line);
+        padding: 28px 0
+      }
+
+      .job h3 {
+        font-size: 20px
+      }
+
+      .job small {
+        color: var(--muted);
+        display: block;
+        margin-top: 10px
+      }
+
+      .job p {
+        color: var(--muted);
+        font-size: 14px;
+        line-height: 1.8
+      }
+
+      .contact {
+        padding: 65px;
+        border-radius: 8px;
+        background: var(--lime);
+        color: var(--bg);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+        margin: 20px 0 70px
+      }
+
+      .contact h2 {
+        max-width: 650px;
+        font-size: clamp(32px, 4vw, 56px)
+      }
+
+      .contact p {
+        line-height: 1.8;
+        margin-top: 18px;
+        max-width: 590px
+      }
+
+      .contact .badge {
+        border: 1px solid #6e863f;
+        border-radius: 50%;
+        height: 110px;
+        min-width: 110px;
+        display: grid;
+        place-items: center;
+        font: 52px 'Space Grotesk', sans-serif
+      }
+
+      footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 27px 0 35px;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 12px
+      }
+
+      a:focus-visible,
+      button:focus-visible {
+        outline: 2px solid var(--lime);
+        outline-offset: 5px
+      }
+
+      @media(max-width:850px) {
+        .hero {
+          grid-template-columns: 1fr;
+          gap: 20px;
+          padding-top: 60px
+        }
+
+        .visual {
+          min-height: 370px
+        }
+
+        .nav-tag {
+          display: none
+        }
+
+        .strip {
+          flex-wrap: wrap
+        }
+
+        .about {
+          grid-template-columns: 1fr;
+          gap: 20px
+        }
+
+        .job {
+          grid-template-columns: 1fr 1fr
+        }
+
+        .job p {
+          grid-column: 1/-1
+        }
+
+        .section-head {
+          align-items: start;
+          flex-direction: column
+        }
+
+        .contact {
+          padding: 35px
+        }
+
+        .contact .badge {
+          display: none
+        }
+      }
+
+      @media(max-width:560px) {
+        nav {
+          height: 78px
+        }
+
+        .links {
+          gap: 18px;
+          font-size: 12px
+        }
+
+        .brand {
+          font-size: 20px
+        }
+
+        .projects {
+          grid-template-columns: 1fr
+        }
+
+        h1 {
+          letter-spacing: -2.7px
+        }
+
+        .hero {
+          gap: 40px
+        }
+
+        .orbit {
+          width: 280px;
+          height: 280px
+        }
+
+        .monogram {
+          width: 190px;
+          height: 190px;
+          font-size: 75px
+        }
+
+        .visual {
+          min-height: 320px
+        }
+
+        .chip {
+          padding: 10px;
+          font-size: 11px
+        }
+
+        .c2 {
+          right: -5px
+        }
+
+        .section {
+          padding: 62px 0
+        }
+
+        h2 {
+          font-size: 36px
+        }
+
+        .strip {
+          font-size: 12px
+        }
+
+        .contact {
+          padding: 28px;
+          margin-bottom: 45px
+        }
+
+        footer {
+          gap: 20px
+        }
+
+        .node {
+          padding: 18px 10px;
+          font-size: 11px
+        }
+
+        .flow {
+          gap: 9px
+        }
+      }
+
+      @media(prefers-reduced-motion:reduce) {
+        html {
+          scroll-behavior: auto
+        }
+
+        .btn:hover {
+          transform: none
+        }
+      }
+    </style>
+    <link href="effects.css" rel="stylesheet" />
+    <link href="glass.css" rel="stylesheet" />
+    <link href="theme.css" rel="stylesheet" />
+    <script>
+      try {
+        document.documentElement.dataset.theme = localStorage.getItem("portfolio-theme") || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light")
+      } catch {}
+    </script>
+    <link href="contact.css" rel="stylesheet" />
+    <link href="portrait.css" rel="stylesheet" />
+    <link href="balls.css" rel="stylesheet" />
+    <link href="typing.css" rel="stylesheet" />
+    <link href="scroll.css" rel="stylesheet" />
+    <link href="va.css" rel="stylesheet" />
+    <link href="service-previews.css" rel="stylesheet" />
+    <link href="va-tools.css" rel="stylesheet" />
+    <link href="workspace-demo.css" rel="stylesheet" />
+    <link href="credibility.css" rel="stylesheet" />
+    <link href="setup.css" rel="stylesheet" />
+    <link href="design-automation.css" rel="stylesheet" />
+    <link href="design-skills.css" rel="stylesheet" />
+    <link href="card-motion.css" rel="stylesheet" />
+    <link href="toolkit-icons.css" rel="stylesheet" />
+    <link href="tool-tasks.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="nav-shell">
+        <nav aria-label="Main navigation">
+          <a class="brand" href="#">fca <span>.</span>
+          </a>
+          <div class="links">
+            <a href="#work">Services</a>
+            <a href="#about">Toolkit</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="nav-controls">
+            <span class="nav-tag">
+              <span class="dot"></span>Mandaue City, Cebu </span>
+            <button aria-checked="false" aria-label="Dark mode" class="theme-switch" role="switch" type="button">
+              <span class="theme-label">Light</span>
+              <span aria-hidden="true" class="theme-track">
+                <span class="theme-thumb"></span>
+              </span>
+            </button>
+          </div>
+        </nav>
+      </div>
+      <main>
+        <section class="hero">
+          <div>
+            <div class="eyebrow">Frenz Carl Asibuque / AI &amp; Automation Specialist · Web Designer</div>
+            <h1 aria-label="Better websites. Smarter workflows." class="typing-heading">
+              <span aria-hidden="true" class="type-line">
+                <span class="type-reserve">Better websites.</span>
+                <span class="type-output">Better websites.</span>
+              </span>
+              <span aria-hidden="true" class="type-line">
+                <span class="type-reserve">Smarter</span>
+                <span class="type-output">Smarter</span>
+              </span>
+              <span aria-hidden="true" class="type-line">
+                <span class="type-reserve">workflows.</span>
+                <span class="type-output">workflows.</span>
+              </span>
+            </h1>
+            <p class="intro">Hi! I’m Frenz, a software engineer based in Cebu, Philippines. I build websites and workflows that reduce repetitive work. For small businesses and lean teams, that means a clearer online presence, better handoffs, and practical AI assistance where it adds value.</p>
+            <div class="actions">
+              <a class="btn primary" href="#samples">Explore my work ↗</a>
+              <a class="btn" href="#contact">Discuss your project ↓</a>
+            </div>
+          </div>
+          <div aria-label="Portrait of Frenz Carl Asibuque" class="visual">
+            <div class="orbit portrait-frame">
+              <div class="portrait-window">
+                <img alt="Frenz Carl Asibuque by the water" class="portrait-photo" decoding="async" fetchpriority="high" height="2048" src="frenz-portrait.jpg" width="1536" />
+                <div aria-hidden="true" class="portrait-shine"></div>
+                <div class="portrait-caption">
+                  <span>Hi, I’m Frenz.</span>
+                  <small>Web design · AI-assisted workflows</small>
+                </div>
+              </div>
+              <span class="chip c1">Workflow automation</span>
+              <span class="chip c2">Responsive websites</span>
+              <span class="chip c3">AI-assisted processes</span>
+            </div>
+            <span class="visual-note">DESIGN THE EXPERIENCE. CONNECT THE WORK.</span>
+          </div>
+        </section>
+        <div class="strip">
+          <span>
+            <strong>Web design</strong> with working interactions </span>
+          <span>
+            <strong>Workflow logic</strong> &amp; technical implementation </span>
+          <span>
+            <strong>8+ years</strong> in software engineering </span>
+          <span>
+            <strong>Cebu, Philippines</strong> · UTC+8 </span>
+        </div>
+        <section class="section" id="work">
+          <div class="section-head">
+            <div>
+              <div class="kicker">01 / HOW I CAN HELP</div>
+              <h2>Build the website. Simplify what happens next.</h2>
+            </div>
+            <p>For small teams that need a useful website and a more consistent way to handle the work behind it.</p>
+          </div>
+          <p class="stack-caption">RESPONSIVE WEB DESIGN / AUTOMATION / AI-ASSISTED WORKFLOWS</p>
+          <div class="projects">
+            <article class="project visual-service lavender">
+              <div class="project-art">
+                <div class="preview-top">
+                  <span>ANIMATED CONCEPT PREVIEW</span>
+                  <span>↗</span>
+                </div>
+                <div class="concept-window ai-concept">
+                  <div class="window-bar">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <span>assistant / review workspace</span>
+                  </div>
+                  <div class="concept-content">
+                    <div class="ai-agent">
+                      <span aria-hidden="true" class="ai-spark">✧</span>
+                      <div>
+                        <b>AI draft assistant</b>
+                        <small>Source → structure → review</small>
+                      </div>
+                      <span class="concept-pill">DEMO</span>
+                    </div>
+                    <div class="prompt-bubble">
+                      <span class="bubble-caption">YOUR INPUT</span>
+                      <p>Turn these project notes into a concise client update.</p>
+                      <div class="source-lines">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                      </div>
+                    </div>
+                    <div class="ai-processing">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <small>Organizing the source material</small>
+                    </div>
+                    <div class="output-bubble">
+                      <span class="bubble-caption">AI-ASSISTED DRAFT</span>
+                      <p class="generated-line">Progress, blockers, and next steps.</p>
+                      <div class="output-lines">
+                        <i></i>
+                        <i></i>
+                      </div>
+                    </div>
+                    <div class="review-chip">✓ Human review before use</div>
+                  </div>
+                </div>
+                <div class="preview-bottom">
+                  <span>AI-ASSISTED WORKFLOW</span>
+                  <span class="preview-interact">Explore the process</span>
+                </div>
+              </div>
+              <div class="project-body animated-copy">
+                <div class="kicker">01 / AI-ASSISTED WORKFLOWS</div>
+                <h3>Use AI with a clear job to do.</h3>
+                <p>Design a repeatable process for drafting, summarizing, or organizing information—with defined inputs, review steps, and a useful output.</p>
+                <div class="tags">
+                  <span>Drafting</span>
+                  <span>Summaries</span>
+                  <span>Human review</span>
+                </div>
+              </div>
+              <button aria-controls="detail1" aria-expanded="false">What I can take on <span>+</span>
+              </button>
+              <div class="detail" hidden="" id="detail1">We define the task, prepare sample inputs, agree on output quality, and keep a human review step where accuracy matters. A production AI connection is scoped and tested separately from the browser demos.</div>
+            </article>
+            <article class="project visual-service sky">
+              <div class="project-art blue">
+                <div class="preview-top">
+                  <span>ANIMATED CONCEPT PREVIEW</span>
+                  <span>↗</span>
+                </div>
+                <div class="concept-window automation-concept">
+                  <div class="window-bar">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <span>workflow / intake-to-action</span>
+                  </div>
+                  <div class="concept-content">
+                    <div class="flow-caption">
+                      <b>New enquiry workflow</b>
+                      <span class="concept-pill">CONCEPT</span>
+                    </div>
+                    <div class="automation-map">
+                      <div class="automation-node trigger-node">
+                        <span aria-hidden="true" class="node-symbol">▤</span>
+                        <div>
+                          <small>TRIGGER</small>
+                          <strong>Form submitted</strong>
+                        </div>
+                        <span class="node-tick">✓</span>
+                      </div>
+                      <div class="flow-wire">
+                        <span></span>
+                      </div>
+                      <div class="automation-node route-node">
+                        <span aria-hidden="true" class="node-symbol">⇄</span>
+                        <div>
+                          <small>RULE</small>
+                          <strong>Validate &amp; route</strong>
+                        </div>
+                        <span class="node-tick">✓</span>
+                      </div>
+                      <div class="flow-branches">
+                        <div class="flow-wire">
+                          <span></span>
+                        </div>
+                        <div class="flow-wire">
+                          <span></span>
+                        </div>
+                      </div>
+                      <div class="action-pair">
+                        <div class="action-node task-action">
+                          <span aria-hidden="true">☑</span>
+                          <b>Create task</b>
+                          <small>Assign an owner</small>
+                        </div>
+                        <div class="action-node notify-action">
+                          <span aria-hidden="true">✉</span>
+                          <b>Notify team</b>
+                          <small>Keep the next step visible</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="concept-footnote">One input. Clear actions. Visible ownership.</div>
+                  </div>
+                </div>
+                <div class="preview-bottom">
+                  <span>WORKFLOW AUTOMATION</span>
+                  <span class="preview-interact">Explore the process</span>
+                </div>
+              </div>
+              <div class="project-body animated-copy">
+                <div class="kicker">02 / WORKFLOW AUTOMATION</div>
+                <h3>Connect the steps that keep repeating.</h3>
+                <p>Map a workflow from intake to assignment, updates, and reporting. Identify what can be automated and where exceptions need a person.</p>
+                <div class="tags">
+                  <span>Forms &amp; intake</span>
+                  <span>Task routing</span>
+                  <span>Notifications</span>
+                </div>
+              </div>
+              <button aria-controls="detail2" aria-expanded="false">What I can take on <span>+</span>
+              </button>
+              <div class="detail" hidden="" id="detail2">Start with one recurring workflow. We map the trigger, data fields, actions, failure cases, and ownership. The selected integration platform and permissions are agreed before implementation.</div>
+            </article>
+            <article class="project visual-service peach">
+              <div class="project-art blue">
+                <div class="preview-top">
+                  <span>ANIMATED CONCEPT PREVIEW</span>
+                  <span>↗</span>
+                </div>
+                <div class="concept-window web-concept">
+                  <div class="window-bar">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <span>website / responsive preview</span>
+                  </div>
+                  <div class="concept-content">
+                    <div class="flow-caption">
+                      <b>Design that adapts.</b>
+                      <span class="concept-pill">DESKTOP + MOBILE</span>
+                    </div>
+                    <div class="device-stage">
+                      <div class="desktop-mock">
+                        <div class="mock-nav">
+                          <span>studio.</span>
+                          <i></i>
+                          <i></i>
+                          <b>↗</b>
+                        </div>
+                        <div class="mock-hero">
+                          <div>
+                            <span class="mock-eyebrow">A CLEAR FIRST IMPRESSION</span>
+                            <strong>Your next <br />chapter. </strong>
+                            <i></i>
+                            <i></i>
+                            <span class="mock-cta">Let’s talk ↗</span>
+                          </div>
+                          <div class="mock-art">
+                            <span></span>
+                            <span></span>
+                          </div>
+                        </div>
+                        <div class="mock-cards">
+                          <i></i>
+                          <i></i>
+                          <i></i>
+                        </div>
+                        <div class="design-scan"></div>
+                      </div>
+                      <div class="phone-mock">
+                        <div class="phone-notch"></div>
+                        <span>studio.</span>
+                        <strong>Your next <br />chapter. </strong>
+                        <div class="phone-art"></div>
+                        <span class="mock-cta">Let’s talk ↗</span>
+                        <div class="phone-lines">
+                          <i></i>
+                          <i></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="responsive-tags">
+                      <span>↔ Responsive layout</span>
+                      <span>⌘ Purposeful interaction</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="preview-bottom">
+                  <span>RESPONSIVE WEB DESIGN</span>
+                  <span class="preview-interact">Explore the process</span>
+                </div>
+              </div>
+              <div class="project-body animated-copy">
+                <div class="kicker">03 / WEB DESIGN</div>
+                <h3>A website that feels like your business.</h3>
+                <p>Responsive websites and landing pages with clear layouts, consistent typography, and purposeful interaction. CMS-based updates can be scoped for WordPress, Elementor, or Webflow.</p>
+                <div class="tags">
+                  <span>HTML &amp; CSS</span>
+                  <span>JavaScript</span>
+                  <span>Responsive design</span>
+                </div>
+              </div>
+              <button aria-controls="detail3" aria-expanded="false">What I can take on <span>+</span>
+              </button>
+              <div class="detail" hidden="" id="detail3">Agree on the platform and editing requirements first. Scope can include approved content updates, responsive layouts, downloadable documents, image preparation, link checks, forms, and routine formatting fixes. CMS implementation and specific integrations are confirmed during scoping.</div>
+            </article>
+          </div>
+        </section>
+        <section class="section about" id="about">
+          <div>
+            <div class="kicker">02 / DESIGN &amp; TECHNICAL THINKING</div>
+            <h2>A designer’s eye. A developer’s foundation.</h2>
+            <div class="tool-task-list" aria-label="Tasks by toolkit">
+              <div class="tool-task-panel" data-task-category="AI &amp; Automation">
+                <h3>AI &amp; Automation experience</h3>
+                <ul>
+                  <li>
+                    <strong>AI drafting & research</strong>
+                    <span>Use ChatGPT, Claude, and Gemini to turn supplied notes into client updates, summarize documents, outline presentations, and structure website copy—with source checks and human review.</span>
+                  </li>
+                  <li>
+                    <strong>Connected workflows</strong>
+                    <span>Use Zapier, Make, and n8n to connect form submissions to records, task assignments, approval steps, and team notifications.</span>
+                  </li>
+                  <li>
+                    <strong>CRM & follow-up</strong>
+                    <span>Use GoHighLevel to organize enquiry pipelines, capture lead details, and set up follow-up workflows with clear ownership.</span>
+                  </li>
+                  <li>
+                    <strong>Intake & reporting</strong>
+                    <span>Use Google Forms and Google Sheets to collect requests, validate required fields, organize records, and prepare status summaries.</span>
+                  </li>
+                  <li>
+                    <strong>Business documents</strong>
+                    <span>Use Microsoft 365 to prepare editable Word documents, reusable PowerPoint templates, and structured Excel trackers for team handoffs.</span>
+                  </li>
+                  <li>
+                    <strong>Custom workflow logic</strong>
+                    <span>Use Python and JavaScript to clean and transform data, validate inputs, and add custom logic when a workflow needs more than standard integrations.</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="tool-task-panel" data-task-category="Web Designer" hidden>
+                <h3>Web Designer experience</h3>
+                <ul>
+                  <li>
+                    <strong>CMS & landing pages</strong>
+                    <span>Use WordPress, Elementor, and Webflow to build and update pages, publish approved product information, and organize downloadable documents.</span>
+                  </li>
+                  <li>
+                    <strong>Storefronts & business sites</strong>
+                    <span>Use Shopify for product pages and storefront layouts, and Wix or Squarespace for service websites and campaign pages.</span>
+                  </li>
+                  <li>
+                    <strong>Layouts & visual systems</strong>
+                    <span>Use Figma to plan responsive page layouts, reusable components, typography, and clear diagrams that explain technical concepts.</span>
+                  </li>
+                  <li>
+                    <strong>Presentations & documents</strong>
+                    <span>Use PowerPoint and Word to create editable pitch decks, company presentations, proposals, reports, and reusable templates with consistent spacing and typography.</span>
+                  </li>
+                  <li>
+                    <strong>Responsive implementation</strong>
+                    <span>Use HTML5, CSS3, JavaScript, and Bootstrap to build responsive layouts, interactive elements, accessible forms, and navigation for desktop and mobile.</span>
+                  </li>
+                  <li>
+                    <strong>Components & delivery</strong>
+                    <span>Use React and Next.js for component-based website interfaces, and Git to track revisions and organize source files for handover.</span>
+                  </li>
+                  <li>
+                    <strong>Website quality checks</strong>
+                    <span>Test forms and supported integrations, check links, optimize images, and resolve routine layout and formatting issues before publishing.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="skills skills-playground">
+            <div class="skills-header">
+              <p>Two disciplines. One connected toolkit.</p>
+              <button class="shuffle-balls" type="button">Shuffle ↗</button>
+            </div>
+            <div aria-label="Technology focus" class="tool-filters" role="group">
+              <button aria-pressed="true" class="tool-filter" data-category="AI &amp; Automation" type="button">AI &amp; Automation</button>
+              <button aria-pressed="false" class="tool-filter" data-category="Web Designer" type="button">Web Designer</button>
+            </div>
+            <div aria-label="AI automation and web design toolkit" class="ball-arena" role="group"></div>
+            <p class="skills-note">Toolkit overview: HTML/CSS/JavaScript are demonstrated here. CMS, presentation, and design tools are platform options; specific proficiency is confirmed before a project.</p>
+            <div aria-live="polite" class="ball-status">AI &amp; Automation — select a tool to explore its role.</div>
+          </div>
+        </section>
+        <section class="section design-skills" id="design-skills">
+          <div class="section-head">
+            <div>
+              <div class="kicker">DESIGN &amp; WEBSITE SKILL AREAS</div>
+              <h2>Technical content, clearly presented.</h2>
+            </div>
+            <p>Focus areas for design and website projects. Specialist tools and deliverables are agreed after reviewing the brief and relevant samples.</p>
+          </div>
+          <div class="design-skill-grid">
+            <article>
+              <span aria-hidden="true" class="design-skill-icon">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+                  <rect height="16" rx="2" width="18" x="3" y="4"></rect>
+                  <path d="M3 9h18M7 6.5h.01M10 6.5h.01m-1 6-3 2 3 2m6-4 3 2-3 2"></path>
+                </svg>
+              </span>
+              <h3>Website design &amp; CMS</h3>
+              <p>Responsive layouts, landing pages, navigation, approved content updates, and editable pages.</p>
+              <div>WordPress · Elementor · Webflow · HTML/CSS</div>
+            </article>
+            <article>
+              <span aria-hidden="true" class="design-skill-icon">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+                  <path d="M3 4h18M5 4v12h14V4M12 16v5m-4 0 4-3 4 3M8 12l3-3 3 2 3-4"></path>
+                </svg>
+              </span>
+              <h3>Presentations &amp; templates</h3>
+              <p>Clear slide hierarchy, consistent typography, reusable slide layouts, and editable presentation sources.</p>
+              <div>Pitch decks · Sales decks · PowerPoint templates</div>
+            </article>
+            <article>
+              <span aria-hidden="true" class="design-skill-icon">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+                  <path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9zM14 3v6h6M8 13h8m-8 4h5"></path>
+                </svg>
+              </span>
+              <h3>Documents &amp; marketing collateral</h3>
+              <p>Structured pages with consistent headings, tables, images, and spacing across supplied content.</p>
+              <div>Product datasheets · One-pagers · Word templates</div>
+            </article>
+            <article>
+              <span aria-hidden="true" class="design-skill-icon">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+                  <rect height="5" rx="1" width="8" x="8" y="3"></rect>
+                  <rect height="5" rx="1" width="8" x="2" y="16"></rect>
+                  <rect height="5" rx="1" width="8" x="14" y="16"></rect>
+                  <path d="M12 8v4m-6 4v-4h12v4"></path>
+                </svg>
+              </span>
+              <h3>Technical communication</h3>
+              <p>Translate supplied engineering information into readable guides, process flows, and diagrams, with technical accuracy reviewed by the subject owner.</p>
+              <div>Technical diagrams · Case studies · Product summaries</div>
+            </article>
+            <article>
+              <span aria-hidden="true" class="design-skill-icon">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+                  <path d="M12 3 4 6v6c0 5 8 9 8 9s8-4 8-9V6z"></path>
+                  <path d="m8 12 3 3 5-6"></path>
+                </svg>
+              </span>
+              <h3>Website quality checks</h3>
+              <p>Check mobile layouts, image sizing, links, form behavior, keyboard access, and routine formatting issues.</p>
+              <div>Responsive QA · Accessibility basics · HTML/CSS/JS</div>
+            </article>
+            <article>
+              <span aria-hidden="true" class="design-skill-icon">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+                  <path d="m4 17 9-9 3 3-9 9H4zM13 8l2-2a2 2 0 0 1 3 3l-2 2"></path>
+                  <circle cx="6" cy="5" r="2"></circle>
+                  <path d="M11 3h10M19 14h2m-2 4h2"></path>
+                </svg>
+              </span>
+              <h3>Delivery &amp; brand consistency</h3>
+              <p>Work from a brief, maintain editable source files, track revisions, and use a consistent visual system across outputs.</p>
+              <div>Reusable components · Revision tracking · Handover</div>
+            </article>
+          </div>
+          <div class="additional-focus">
+            <strong>Additional areas to scope</strong>
+            <p>SEO fundamentals and metadata, image optimization, HubSpot forms and basic marketing integrations, LinkedIn and newsletter graphics, simple motion/video, and print-ready file preparation. These are optional focus areas, not claims of completed client work.</p>
+          </div>
+        </section>
+        <section class="section va-samples" id="samples">
+          <div class="section-head">
+            <div>
+              <div class="kicker">04 / EXPLORE A SAMPLE WORKFLOW</div>
+              <h2>See workflow logic in action.</h2>
+            </div>
+            <p>Open the workspace to watch or try three browser-based workflow simulations. The examples use fictional data and do not connect to live third-party apps.</p>
+          </div>
+          <details class="workspace-disclosure">
+            <summary>
+              <span aria-hidden="true" class="disclosure-icon">↗</span>
+              <span>
+                <strong>Explore interactive demos</strong>
+                <small>Task workspace, data cleanup, and support handoff</small>
+              </span>
+              <span class="disclosure-action">
+                <span class="closed-label">Open demos</span>
+                <span class="open-label">Close demos</span>
+                <b aria-hidden="true">+</b>
+              </span>
+            </summary>
+            <div class="workspace-demo">
+              <div aria-label="Sample workflows" class="demo-tabs" role="tablist">
+                <button aria-controls="workspace-panel" aria-selected="true" data-demo="board" id="tab-board" role="tab">01 / Task workspace</button>
+                <button aria-controls="workspace-panel" aria-selected="false" data-demo="data" id="tab-data" role="tab" tabindex="-1">02 / Data cleanup</button>
+                <button aria-controls="workspace-panel" aria-selected="false" data-demo="support" id="tab-support" role="tab" tabindex="-1">03 / Support desk</button>
+              </div>
+              <div class="demo-toolbar">
+                <span class="demo-label">INTERACTIVE DEMO · FICTIONAL DATA</span>
+                <div>
+                  <button data-control="watch" type="button">▶ Watch demo</button>
+                  <button data-control="try" type="button">Try it</button>
+                  <button data-control="reset" type="button">↺ Reset</button>
+                </div>
+              </div>
+              <div aria-labelledby="tab-board" id="workspace-panel" role="tabpanel" tabindex="0"></div>
+              <div aria-live="polite" class="demo-status" role="status">Choose Watch demo or Try it to explore this workflow.</div>
+            </div>
+          </details>
+        </section>
+        <section class="section work-setup" id="setup">
+          <div class="section-head">
+            <div>
+              <div class="kicker">05 / MY REMOTE WORK SETUP</div>
+              <h2>Equipped for focused work.</h2>
+            </div>
+            <p>A dedicated desktop setup with two displays and a secondary internet connection.</p>
+          </div>
+          <div class="setup-grid">
+            <article class="setup-item">
+              <span aria-hidden="true" class="line-icon">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+                  <rect height="12" rx="2" width="12" x="6" y="6"></rect>
+                  <rect height="6" rx="1" width="6" x="9" y="9"></rect>
+                  <path d="M9 3v3m6-3v3M9 18v3m6-3v3M3 9h3m-3 6h3m12-6h3m-3 6h3"></path>
+                </svg>
+              </span>
+              <span class="setup-label">PROCESSOR</span>
+              <h3>AMD Ryzen 7 5700X</h3>
+              <p>Desktop workstation</p>
+            </article>
+            <article class="setup-item">
+              <span aria-hidden="true" class="line-icon">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+                  <rect height="11" rx="2" width="18" x="3" y="6"></rect>
+                  <path d="M7 10h3v3H7zm7 0h3v3h-3zM7 17v3m5-3v3m5-3v3"></path>
+                </svg>
+              </span>
+              <span class="setup-label">MEMORY</span>
+              <h3>16 GB RAM</h3>
+              <p>Working memory</p>
+            </article>
+            <article class="setup-item">
+              <span aria-hidden="true" class="line-icon">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+                  <path d="M3 8a15 15 0 0 1 18 0M6 12a10 10 0 0 1 12 0m-9 4a5 5 0 0 1 6 0"></path>
+                  <circle cx="12" cy="20" r="1"></circle>
+                </svg>
+              </span>
+              <span class="setup-label">CONNECTIVITY</span>
+              <h3>500 Mbps internet</h3>
+              <p>Secondary connection available</p>
+            </article>
+            <article class="setup-item">
+              <span aria-hidden="true" class="line-icon">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+                  <rect height="10" rx="1.5" width="10" x="2" y="5"></rect>
+                  <rect height="9" rx="1.5" width="8" x="14" y="7"></rect>
+                  <path d="M7 15v4m-3 0h6m8-3v3m-2 0h4"></path>
+                </svg>
+              </span>
+              <span class="setup-label">WORKSPACE</span>
+              <h3>Dual monitors</h3>
+              <p>Two-screen setup</p>
+            </article>
+            <article class="setup-item">
+              <span aria-hidden="true" class="line-icon">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+                  <path d="M4 14v-3a8 8 0 0 1 16 0v3"></path>
+                  <rect height="7" rx="2" width="4" x="3" y="12"></rect>
+                  <rect height="7" rx="2" width="4" x="17" y="12"></rect>
+                  <path d="M19 19c0 2-3 3-6 3m-1-1h2"></path>
+                </svg>
+              </span>
+              <span class="setup-label">AUDIO</span>
+              <h3>Razer headset</h3>
+              <p>Noise-cancelling · model to confirm</p>
+            </article>
+            <article class="setup-item">
+              <span aria-hidden="true" class="line-icon">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+                  <path d="M12 2v9m-6-6a9 9 0 1 0 12 0"></path>
+                </svg>
+              </span>
+              <span class="setup-label">POWER CONTINUITY</span>
+              <h3>Power arrangement</h3>
+              <p>Details to be confirmed</p>
+            </article>
+          </div>
+        </section>
+        <section class="section engagement">
+          <div class="section-head">
+            <div>
+              <div class="kicker">WORKING ARRANGEMENT</div>
+              <h2>Start with one page or one workflow.</h2>
+            </div>
+            <p>A clear fit matters more than a long list of services.</p>
+          </div>
+          <div class="engagement-grid">
+            <div>
+              <span aria-hidden="true" class="line-icon">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+                  <circle cx="12" cy="12" r="9"></circle>
+                  <path d="M3 12h18M12 3a17 17 0 0 1 0 18 17 17 0 0 1 0-18"></path>
+                </svg>
+              </span>
+              <h3>Location &amp; overlap</h3>
+              <p>Based in Cebu, Philippines · UTC+8. Share your preferred collaboration hours so we can discuss availability and overlap.</p>
+            </div>
+            <div>
+              <span aria-hidden="true" class="line-icon">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+                  <rect height="14" rx="2" width="18" x="3" y="7"></rect>
+                  <path d="M8 7V4h8v3M3 12a24 24 0 0 0 18 0m-9 0v4"></path>
+                </svg>
+              </span>
+              <h3>First assignment</h3>
+              <p>A landing page, portfolio, or clearly defined repetitive workflow makes a useful starting scope. We agree on the inputs, deliverables, and review points.</p>
+            </div>
+            <div>
+              <span aria-hidden="true" class="line-icon">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+                  <rect height="16" rx="3" width="16" x="4" y="4"></rect>
+                  <path d="m8 12 3 3 5-6"></path>
+                </svg>
+              </span>
+              <h3>Before we begin</h3>
+              <p>Confirm scope, content, integrations, hosting, access, testing, timeline, and compensation before implementation. Production connections are reviewed separately from prototypes.</p>
+            </div>
+          </div>
+        </section>
+        <section class="contact" id="contact">
+          <div class="contact-intro">
+            <div class="kicker">06 / DISCUSS YOUR PROJECT</div>
+            <h2>What should work better for your business?</h2>
+            <p>Tell me whether you need a website, an automated workflow, or both. Include your goal, existing tools, and preferred timeline so we can discuss a practical scope.</p>
+          </div>
+          <div class="contact-links">
+            <a href="mailto:frenzcarlasibuque97@gmail.com?subject=Website%20or%20automation%20project%20inquiry">
+              <span aria-hidden="true" class="line-icon">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+                  <rect height="14" rx="2" width="18" x="3" y="5"></rect>
+                  <path d="m3 6 9 7 9-7"></path>
+                </svg>
+              </span>
+              <span>Email</span>
+              <strong>frenzcarlasibuque97@gmail.com</strong>
+              <b aria-hidden="true">↗</b>
+            </a>
+            <a href="tel:+639065345564">
+              <span aria-hidden="true" class="line-icon">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+                  <path d="m8 3 3 5-3 3a16 16 0 0 0 5 5l3-3 5 3c-1 6-5 6-11 2S1 6 4 3Z"></path>
+                </svg>
+              </span>
+              <span>Phone</span>
+              <strong>+63 906 534 5564</strong>
+              <b aria-hidden="true">↗</b>
+            </a>
+            <div class="contact-location">
+              <span aria-hidden="true" class="line-icon">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+                  <path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 0 1 14 0Z"></path>
+                  <circle cx="12" cy="10" r="2"></circle>
+                </svg>
+              </span>
+              <span>Based in</span>
+              <strong>Mandaue City, Cebu, Philippines</strong>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <span>© <span id="year">2026</span> Frenz Carl Asibuque </span>
+        <a href="#">Back to top ↑</a>
+      </footer>
+    </div>
+    <script>
+      document.querySelectorAll('.project button').forEach(button => button.addEventListener('click', () => {
+        const open = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', String(!open));
+        document.getElementById(button.getAttribute('aria-controls')).hidden = open;
+        button.querySelector('span').textContent = open ? '+' : '−'
+      }));
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script defer="" src="effects.js"></script>
+    <script defer="" src="theme.js"></script>
+    <script defer="" src="balls.js"></script>
+    <script defer="" src="typing.js"></script>
+    <script defer="" src="scroll.js"></script>
+    <script defer="" src="workspace-demo.js"></script>
+    <script defer="" src="card-motion.js"></script>
+    <script defer src="tool-tasks.js"></script>
+  </body>
+</html>
